@@ -1,0 +1,15 @@
+{
+  "name": "shader-runner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.14.22",
+    "html-minifier": "^4.0.0",
+    "spglsl": "^0.0.19"
+  },
+  "scripts": {
+    "build": "node build.js && cd build && zip build.zip index.html",
+    "watch": "node build.js --watch"
+  }
+}
